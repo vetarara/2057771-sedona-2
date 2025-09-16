@@ -2,7 +2,7 @@
 
 * Студент: [Вета Жёлтикова](https://up.htmlacademy.ru/htmlcss-individual/2/user/2057771).
 * Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
-
+* Сайт: [Седона/Вета](https://vetarara.github.io/2057771-sedona-2/).
 ---
 
 _Не удаляйте и не обращайте внимание на файлы:_<br>
