@@ -16,13 +16,13 @@
         <nav class="header-navigation navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navigation-link-current" href="index.html" aria-current="page">Главная</a>
+              <a class="navigation-link" href="index.html">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navigation-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
             </li>
           </ul>
 
@@ -93,12 +93,12 @@
                   <div class="filter-range-item">
                     <label for="min">от</label>
                     <input class="filter-range-input filter-range-input-min" id="min" name="min-price" type="number"
-                      value="0" min="0" max="9000">
+                      value="0" min="0">
                   </div>
                   <div class="filter-range-item">
                     <label for="max">до</label>
                     <input class="filter-range-input filter-range-input-max" id="max" name="max-price" type="number"
-                      value="9000" min="0" max="9000">
+                      value="9000" min="0">
                   </div>
                 </div>
                 <div class="filter-toggle">
@@ -118,15 +118,18 @@
         </section>
 
         <section class="sorting container">
-          <h2 class="sorting-title">Найдено гостиниц: 38</h2>
+          <p class="sorting-title">Найдено гостиниц: 38</p>
           <select class="select sorting-select">
             <option value="sorting-uncostly">Сначала дешевые</option>
             <option value="sorting-expensive">Сначала дорогие</option>
+            <option value="sorting-popular">Сначала популярные</option>
           </select>
           <div class="sorting-view">
-            <a class="sorting-item sorting-item-tile sorting-item-active" href="#" aria-label="Вид плитками"></a>
-            <a class="sorting-item sorting-item-slideshow" href="#" aria-label="Вид превью"></a>
-            <a class="sorting-item sorting-item-list" href="#" aria-label="Вид списком"></a>
+            <a class="sorting-item sorting-item-tile sorting-item-active" href="catalog.html?view=tile"
+              aria-label="Показать карточки"></a>
+            <a class="sorting-item sorting-item-slideshow" href="catalog.html?view=card"
+              aria-label="Показать превью"></a>
+            <a class="sorting-item sorting-item-list" href="catalog.html?view=list" aria-label="Показать список"></a>
           </div>
         </section>
 
@@ -134,7 +137,7 @@
           <ul class="hotels-list">
             <li class="hotels-item">
               <a class="hotels-img" href="#">
-                <img src="images/hotel-1.jpg" width="300" height="212" alt="Amara Resort and Spa">
+                <img src="images/hotel-1.jpg" width="300" height="212" alt="Вид на звёздное небо из ущелья">
               </a>
               <div class="hotels-description">
                 <h2 class="hotels-title">Amara Resort &amp; Spa</h2>
@@ -153,7 +156,8 @@
             </li>
             <li class="hotels-item">
               <a class="hotels-img" href="#">
-                <img src="images/hotel-2.jpg" width="300" height="212" alt="Villas at Poco Diablo">
+                <img src="images/hotel-2.jpg" width="300" height="212"
+                  alt="Залитые солнцем скалы после дождя с сияющей радугой">
               </a>
               <div class="hotels-description">
                 <h2 class="hotels-title">Villas at Poco Diablo</h2>
@@ -172,7 +176,7 @@
             </li>
             <li class="hotels-item">
               <a class="hotels-img" href="#">
-                <img src="images/hotel-3.jpg" width="300" height="212" alt="Desert Quail Inn">
+                <img src="images/hotel-3.jpg" width="300" height="212" alt="Скалы под ясным небом">
               </a>
               <div class="hotels-description">
                 <h2 class="hotels-title">Desert Quail Inn</h2>
@@ -190,7 +194,7 @@
             </li>
             <li class="hotels-item">
               <a class="hotels-img" href="#">
-                <img src="images/hotel-4.jpg" width="300" height="212" alt="GreenTree Inn">
+                <img src="images/hotel-4.jpg" width="300" height="212" alt="Скалы в звёздную ночь">
               </a>
               <div class="hotels-description">
                 <h2 class="hotels-title">GreenTree Inn</h2>
