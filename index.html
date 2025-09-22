@@ -11,7 +11,7 @@
     <div class="page-container">
       <header class="header">
         <a class="navigation-logo" href="index.html">
-          <img src="images/logo-sedona.svg" width="140" height="70" alt="Логотип Седоны">
+          <img src="images/logo-sedona.svg" width="138" height="64" alt="Логотип сайта Седоны">
         </a>
         <nav class="header-navigation navigation">
           <ul class="navigation-list">
@@ -49,9 +49,9 @@
 
         <section class="banner">
           <h1 class="visually-hidden">Седона</h1>
-          <!-- Вынесла alt в отдельный p, чтобы скринридер корректно прочитатал текст на английском языке, т.к. lang="en" внутри alt не работает -->
+          <!-- Вынесла alt в отдельный p, чтобы скринридер корректно читатал текст на английском языке, т.к. lang="en" внутри alt не работает -->
           <p class="visually-hidden" lang="en">Welcome to the gorgeous Sedona! 'Because the Grand Canyon sucks!'</p>
-          <img class="hero__description" src="#" alt="">
+          <img class="hero-description" width="458" height="352" src="#" alt="">
         </section>
 
         <section class="slogan-primary">
@@ -67,7 +67,11 @@
                 <h3 class="advantage-title">Настоящий городок</h3>
                 <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img src="images/small-town.jpg" width="800" height="385" alt="Настоящий городок">
+              <picture>
+                <source srcset="images/small-town.avif" type="image/avif">
+                <source srcset="images/small-town.webp" type="image/webp">
+                <img src="images/small-town.jpg" width="800" height="385" alt="Настоящий городок" decoding="async">
+              </picture>
             </li>
             <li class="advantage-item">
               <h3 class="advantage-title">Небольшая площадь</h3>
@@ -88,7 +92,11 @@
                 <h3 class="advantage-title">Там есть Мост Дьявола</h3>
                 <p class="advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
               </div>
-              <img src="images/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола">
+              <picture>
+                <source srcset="images/devils-bridge.avif" type="image/avif">
+                <source srcset="images/devils-bridge.webp" type="image/webp">
+                <img src="images/devils-bridge.jpg" width="800" height="385" alt="Мост Дьявола" decoding="async">
+              </picture>
             </li>
           </ul>
         </section>
@@ -171,7 +179,7 @@
           <h3 class="visually-hidden">Разработка сайта</h3>
           <a class="academy-logo" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank"
             rel="noopener noreferrer">
-            <img src="images/logo-html-academy.svg" width="140" height="70" alt="HTML Academy">
+            <img src="images/logo-html-academy.svg" width="115" height="33" alt="HTML Academy">
           </a>
         </div>
 
