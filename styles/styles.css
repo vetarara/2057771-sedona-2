@@ -23,6 +23,17 @@ body {
   background-color: #ffffff;
 }
 
+.button-default {
+  display: inline-block;
+  padding: 8px 34px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: #756157;
+  text-transform: uppercase;
+  border: none;
+}
+
 /* Pages */
 
 /* header */
@@ -41,15 +52,6 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
-}
-
-.navigation-user-link-go {
-  display: inline-block;
-  padding: 8px 34px;
-  border-radius: 4px;
-  color: #ffffff;
-  background-color: #756157;
-  text-transform: uppercase;
 }
 
 /* main */
@@ -151,15 +153,9 @@ body {
 
 .search-button {
   padding: 8px 50px;
-  border-radius: 4px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 20px;
   line-height: 36px;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #756157;
-  text-transform: uppercase;
-  border: none;
 }
 
 /* subscribe */
