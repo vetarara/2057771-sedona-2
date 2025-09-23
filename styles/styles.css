@@ -25,13 +25,48 @@ body {
 
 .button-default {
   display: inline-block;
-  padding: 8px 34px;
+  padding: 8px;
   border-radius: 4px;
   color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
   background-color: #756157;
   text-transform: uppercase;
   border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-secondary {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: #82b3d3;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-reset {
+  display: inline-block;
+  padding: 8px;
+  border-radius: 4px;
+  color: #ffffff;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  background-color: transparent;
+  text-transform: uppercase;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* Pages */
@@ -52,6 +87,11 @@ body {
   text-align: center;
   color: #000000;
   text-decoration: none;
+}
+
+.navigation-user-link.navigation-user-link-go {
+  color: #ffffff;
+  min-width: 160px;
 }
 
 /* main */
@@ -152,8 +192,7 @@ body {
 }
 
 .search-button {
-  padding: 8px 50px;
-  font-family: "PT Sans", "Arial", sans-serif;
+  min-width: 376px;
   font-size: 20px;
   line-height: 36px;
 }
@@ -200,4 +239,89 @@ body {
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
+}
+
+/* catalog page */
+.filter {
+  color: #ffffff;
+  background-color: #756157;
+  background-image: url("../images/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.page-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs {
+  list-style-type: none;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.filter-form fieldset {
+  border: none;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-control {
+  line-height: 23px;
+}
+
+.filter-apply-button,
+.filter-reset-button {
+  min-width: 190px;
+}
+
+/* sorting */
+.sorting-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.sorting-item {
+  display: inline-block;
+  width: 44px;
+  height: 44px;
+  border: 2px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+/* hotels */
+.hotels-list {
+  list-style-type: none;
+}
+
+.hotels-title a {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.hotels-more,
+.hotels-favorites {
+  min-width: 140px;
+}
+
+.hotels-rating {
+  font-size: 16px;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
 }
