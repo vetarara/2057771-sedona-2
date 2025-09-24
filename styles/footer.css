@@ -1,0 +1,19 @@
+.social-media address,
+.contacts address {
+  font-style: normal;
+}
+
+.social-media-list {
+  list-style-type: none;
+}
+
+.contacts {
+  text-align: center;
+}
+
+.footer-phone {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  text-decoration: none;
+}

@@ -1,0 +1,19 @@
+.features-list {
+  list-style-type: none;
+  text-align: center;
+}
+
+.feature-item {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.feature-item:nth-child(2) {
+  background-color: #ffffff;
+}
+
+.feature-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-transform: uppercase;
+}

@@ -1,0 +1,21 @@
+.search {
+  text-align: center;
+}
+
+.search-title {
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.search-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.search-button {
+  min-width: 376px;
+  font-size: 20px;
+  line-height: 36px;
+}

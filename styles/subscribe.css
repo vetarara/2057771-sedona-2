@@ -1,0 +1,26 @@
+.subscribe {
+  text-align: center;
+  color: #ffffff;
+  background-color: #82b3d3;
+  background-image: url("../images/subscribe-blur.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscribe-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subscribe-text {
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.subscribe-button {
+  width: 232px;
+  font-size: 20px;
+  line-height: 36px;
+}

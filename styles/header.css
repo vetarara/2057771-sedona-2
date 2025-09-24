@@ -1,0 +1,19 @@
+.header {
+  font-size: 20px;
+}
+
+.navigation-list {
+  list-style-type: none;
+}
+
+.navigation-link,
+.navigation-user-link {
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-user-link.navigation-user-link-go {
+  color: #ffffff;
+  min-width: 160px;
+}
