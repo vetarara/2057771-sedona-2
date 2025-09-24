@@ -1,5 +1,17 @@
-.features-list {
+.features {
   text-align: center;
+}
+
+.features-title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.features-subtitle {
+  font-size: 22px;
+  line-height: 26px;
 }
 
 .feature-item {

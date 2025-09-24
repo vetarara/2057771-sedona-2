@@ -1,23 +1,17 @@
-.slogan-primary,
-.slogan-secondary {
+.advantages {
   text-align: center;
 }
 
-.slogan-title {
+.advantages-title {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
   color: #000000;
 }
 
-.slogan-text {
+.advantages-subtitle {
   font-size: 22px;
   line-height: 26px;
-}
-
-/* advantages */
-.advantages-list {
-  text-align: center;
 }
 
 .advantage-item {
