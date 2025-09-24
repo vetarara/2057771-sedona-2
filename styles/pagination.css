@@ -1,7 +1,3 @@
-.pagination {
-  list-style-type: none;
-}
-
 .pagination-link {
   display: flex;
   justify-content: center;

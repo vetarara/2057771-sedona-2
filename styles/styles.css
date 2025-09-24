@@ -72,6 +72,10 @@ body {
   cursor: pointer;
 }
 
+.list-reset {
+  list-style-type: none;
+}
+
 /* header */
 /* banner */
 /* advantages */
