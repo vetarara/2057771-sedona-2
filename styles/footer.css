@@ -13,3 +13,7 @@
   line-height: 40px;
   text-decoration: none;
 }
+
+a.academy-logo {
+  display: inline-block;
+}

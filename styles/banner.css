@@ -1,8 +1,9 @@
 .banner {
   color: #ffffff;
   text-align: center;
-  background-color: #82b3d3;
-  background-image: url("../images/mountains-background.jpg");
-  background-size: 100% auto;
+  background-color: #000000;
+  background-image: url("../images/divider.svg"), url("../images/mountains-background.jpg");
+  background-size: 100% auto, cover;
   background-repeat: no-repeat;
+  background-position: left bottom, left top;
 }

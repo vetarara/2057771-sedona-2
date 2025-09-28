@@ -5,6 +5,7 @@
 .features-title {
   font-size: 30px;
   line-height: 36px;
+  font-weight: 700;
   text-transform: uppercase;
   color: #000000;
 }
@@ -25,6 +26,7 @@
 .feature-title {
   font-size: 24px;
   line-height: 28px;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }

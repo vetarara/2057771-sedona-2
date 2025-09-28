@@ -1,9 +1,13 @@
 .subscribe {
   text-align: center;
+  color: #000000;
+}
+
+.subscribe-special {
   color: #ffffff;
   background-color: #82b3d3;
   background-image: url("../images/subscribe-blur.jpg");
-  background-size: 100% auto;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 

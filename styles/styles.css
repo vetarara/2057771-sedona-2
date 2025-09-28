@@ -16,11 +16,21 @@
 }
 
 body {
+  margin: 0 40px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
+  font-weight: 400;
+  font-style: normal;
   color: #333333;
+  background-color: #f2f2f2;
+}
+
+.page-container {
   background-color: #ffffff;
+  box-shadow:
+    0 0 15px 1px rgba(0, 0, 0, 0.2),
+    0 0 15px 1px rgba(0, 0, 0, 0.2);
 }
 
 .button-default {
@@ -28,7 +38,7 @@ body {
   padding: 8px;
   border-radius: 4px;
   color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-weight: 700;
   background-color: #756157;
   text-transform: uppercase;
@@ -43,7 +53,7 @@ body {
   padding: 8px;
   border-radius: 4px;
   color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
@@ -60,7 +70,7 @@ body {
   padding: 8px;
   border-radius: 4px;
   color: #ffffff;
-  font-family: "PT Sans", "Arial", sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/filter.css">
-    <link rel="stylesheet" href="styles/sorting.css">
+    <link rel="stylesheet" href="styles/search-result.css">
     <link rel="stylesheet" href="styles/hotels.css">
     <link rel="stylesheet" href="styles/search.css">
     <link rel="stylesheet" href="styles/subscribe.css">
@@ -19,7 +19,7 @@
     <div class="page-container">
       <header class="header">
         <a class="navigation-logo" href="index.html">
-          <img src="images/logo-sedona.svg" width="138" height="64" alt="Логотип сайта Седоны">
+          <img src="images/logo-sedona.svg" width="140" height="70" alt="Логотип сайта Седоны">
         </a>
         <nav class="header-navigation navigation">
           <ul class="navigation-list list-reset">
@@ -63,7 +63,7 @@
               </a>
             </li>
             <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-link-current" href="catalog.html" aria-current="page">Гостиницы</a>
+              <a class="breadcrumbs-link breadcrumbs-link-current" href="#" aria-current="page">Гостиницы</a>
             </li>
           </ul>
 
@@ -125,19 +125,18 @@
           </form>
         </section>
 
-        <section class="sorting">
-          <h2 class="sorting-title">Найдено гостиниц: 38</h2>
-          <select class="select sorting-select">
+        <section class="search-result">
+          <h2 class="search-result-title">Найдено гостиниц: 38</h2>
+          <select class="sorting">
             <option value="sorting-uncostly">Сначала дешевые</option>
             <option value="sorting-expensive">Сначала дорогие</option>
             <option value="sorting-popular">Сначала популярные</option>
           </select>
-          <div class="sorting-view">
-            <a class="sorting-item sorting-item-tile sorting-item-active" href="catalog.html?view=tile"
+          <div class="view">
+            <a class="view-item view-item-tile view-item-active" href="catalog.html?view=tile"
               aria-label="Показать карточки"></a>
-            <a class="sorting-item sorting-item-slideshow" href="catalog.html?view=card"
-              aria-label="Показать превью"></a>
-            <a class="sorting-item sorting-item-list" href="catalog.html?view=list" aria-label="Показать список"></a>
+            <a class="view-item view-item-slideshow" href="catalog.html?view=card" aria-label="Показать превью"></a>
+            <a class="view-item view-item-list" href="catalog.html?view=list" aria-label="Показать список"></a>
           </div>
         </section>
 
@@ -234,7 +233,7 @@
 
         </section>
 
-        <section class="subscribe subscribe-catalog">
+        <section class="subscribe">
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
