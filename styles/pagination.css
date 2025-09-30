@@ -16,9 +16,18 @@
 .pagination-link-current {
   color: #000000;
   background-color: #f2f2f2;
+  pointer-events: none;
 }
 
-.pagination-link-more {
+.pagination-more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
   color: #000000;
   background-color: #ffffff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
 }

@@ -43,7 +43,7 @@
             <li class="navigation-user-item">
               <a class="navigation-user-link navigation-user-link-favorites" href="#">
                 <span class="visually-hidden">Избранное</span>
-                <span class="favorites-count"><span class="visually-hidden">Всего в избранном </span>12</span>
+                <span class="favorites-count"><span class="visually-hidden">Отелей в избранном: </span>12</span>
               </a>
             </li>
             <li class="navigation-user-item">
@@ -85,11 +85,11 @@
             <fieldset class="filter-group-radio">
               <legend class="filter-title">Тип Жилья:</legend>
               <div class="filter-list">
-                <input class="filter-input" id="hotel" name="product-group" type="radio" value="hotel" checked>
+                <input class="filter-input" id="hotel" name="housing-type" type="radio" value="hotel" checked>
                 <label class="filter-control" for="hotel">Гостиница</label>
-                <input class="filter-input" id="motel" name="product-group" type="radio" value="motel">
+                <input class="filter-input" id="motel" name="housing-type" type="radio" value="motel">
                 <label class="filter-control" for="motel">Мотель</label>
-                <input class="filter-input" id="apartments" name="product-group" type="radio" value="apartments">
+                <input class="filter-input" id="apartments" name="housing-type" type="radio" value="apartments">
                 <label class="filter-control" for="apartments">Апартаменты</label>
               </div>
             </fieldset>
@@ -112,9 +112,9 @@
                 </div>
                 <div class="filter-toggle">
                   <button class="filter-toggle-item filter-toggle-item-min" type="button"
-                    aria-label="Изменить минимальную цену"></button>
+                    aria-label="Изменить минимальную стоимость"></button>
                   <button class="filter-toggle-item filter-toggle-item-max" type="button"
-                    aria-label="Изменить максимальную цену"></button>
+                    aria-label="Изменить максимальную стоимость"></button>
                 </div>
               </div>
             </fieldset>
@@ -133,18 +133,25 @@
             <option value="sorting-expensive">Сначала дорогие</option>
             <option value="sorting-popular">Сначала популярные</option>
           </select>
-          <div class="view">
-            <a class="view-item view-item-tile view-item-active" href="catalog.html?view=tile"
-              aria-label="Показать карточки"></a>
-            <a class="view-item view-item-card" href="catalog.html?view=card" aria-label="Показать превью"></a>
-            <a class="view-item view-item-list" href="catalog.html?view=list" aria-label="Показать список"></a>
-          </div>
+          <ul class="view list-reset">
+            <li>
+              <a class="view-item view-item-tile view-item-active" href="catalog.html?view=tile"
+                aria-label="Показать карточки"></a>
+            </li>
+            <li>
+              <a class="view-item view-item-card" href="catalog.html?view=card" aria-label="Показать превью"></a>
+            </li>
+            <li>
+              <a class="view-item view-item-list" href="catalog.html?view=list" aria-label="Показать список"></a>
+            </li>
+
+          </ul>
         </section>
 
         <section class="hotels">
           <ul class="hotels-list list-reset">
             <li class="hotels-item">
-              <a class="hotels-img" href="#">
+              <a class="hotels-img" href="#" tabindex="-1">
                 <picture>
                   <source srcset="images/hotel-1.avif" type="image/avif">
                   <source srcset="images/hotel-1.webp" type="image/webp">
@@ -152,7 +159,7 @@
                     decoding="async">
                 </picture>
               </a>
-              <h3 class="hotels-title"><a href="#">Amara Resort &amp; Spa</a></h3>
+              <h3 class="hotels-title"><a href="#" tabindex="-1">Amara Resort &amp; Spa</a></h3>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 4000 ₽</p>
               <a class="hotels-more button-default" href="#">Подробнее</a>
@@ -161,7 +168,7 @@
               <p class="hotels-rating">Рейтинг: 8,5</p>
             </li>
             <li class="hotels-item">
-              <a class="hotels-img" href="#">
+              <a class="hotels-img" href="#" tabindex="-1">
                 <picture>
                   <source srcset="images/hotel-2.avif" type="image/avif">
                   <source srcset="images/hotel-2.webp" type="image/webp">
@@ -169,7 +176,7 @@
                     alt="Залитые солнцем скалы после дождя с сияющей радугой" decoding="async">
                 </picture>
               </a>
-              <h3 class="hotels-title"><a href="#">Villas at Poco Diablo</a></h3>
+              <h3 class="hotels-title"><a href="#" tabindex="-1">Villas at Poco Diablo</a></h3>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 5000 ₽</p>
               <a class="hotels-more button-default" href="#">Подробнее</a>
@@ -178,14 +185,14 @@
               <p class="hotels-rating">Рейтинг: 9,2</p>
             </li>
             <li class="hotels-item">
-              <a class="hotels-img" href="#">
+              <a class="hotels-img" href="#" tabindex="-1">
                 <picture>
                   <source srcset="images/hotel-3.avif" type="image/avif">
                   <source srcset="images/hotel-3.webp" type="image/webp">
                   <img src="images/hotel-3.jpg" width="300" height="212" alt="Скалы под ясным небом" decoding="async">
                 </picture>
               </a>
-              <h3 class="hotels-title"><a href="#">Desert Quail Inn</a></h3>
+              <h3 class="hotels-title"><a href="#" tabindex="-1">Desert Quail Inn</a></h3>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 2500 ₽</p>
               <a class="hotels-more button-default" href="#">Подробнее</a>
@@ -194,14 +201,14 @@
               <p class="hotels-rating">Рейтинг: 6,9</p>
             </li>
             <li class="hotels-item">
-              <a class="hotels-img" href="#">
+              <a class="hotels-img" href="#" tabindex="-1">
                 <picture>
                   <source srcset="images/hotel-4.avif" type="image/avif">
                   <source srcset="images/hotel-4.webp" type="image/webp">
                   <img src="images/hotel-4.jpg" width="300" height="212" alt="Скалы в звёздную ночь" decoding="async">
                 </picture>
               </a>
-              <h3 class="hotels-title"><a href="#">GreenTree Inn</a></h3>
+              <h3 class="hotels-title"><a href="#" tabindex="-1">GreenTree Inn</a></h3>
               <p class="hotels-type">Гостиница</p>
               <p class="hotels-price">От 1500 ₽</p>
               <a class="hotels-more button-default" href="#">Подробнее</a>
@@ -213,7 +220,7 @@
 
           <ol class="pagination list-reset">
             <li class="pagination-item">
-              <a class="pagination-link pagination-link-current" aria-current="page">1</a>
+              <a class="pagination-link pagination-link-current" href="#" aria-current="page">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">2</a>
@@ -225,7 +232,7 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link pagination-link-more">...</a>
+              <span class="pagination-more">...</span>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
