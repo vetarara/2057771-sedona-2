@@ -19,7 +19,7 @@
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.feature-item:nth-child(2) {
+.feature-item:nth-child(even) {
   background-color: #ffffff;
 }
 
