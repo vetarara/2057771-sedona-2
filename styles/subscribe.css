@@ -5,7 +5,7 @@
 
 .subscribe-img {
   color: #ffffff;
-  background-color: #82b3d3;
+  background-color: #47638b;
   background-image: url("../images/background/subscribe-blur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -23,8 +23,19 @@
   line-height: 26px;
 }
 
+.subscribe-input {
+  padding: 14px 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  border: none;
+  border-radius: 4px 0 0 4px;
+  background-color: #f2f2f2;
+}
+
 .subscribe-button {
   width: 232px;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 0 4px 4px 0;
 }

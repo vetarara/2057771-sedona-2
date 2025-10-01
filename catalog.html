@@ -99,15 +99,13 @@
 
               <div class="filter-range-container">
                 <div class="filter-range-change">
-                  <div class="filter-range-item">
+                  <div class="filter-range-item filter-range-item-min">
                     <label for="min">от</label>
-                    <input class="filter-range-input filter-range-input-min" id="min" name="min-price" type="number"
-                      value="0" min="0">
+                    <input class="filter-range-input" id="min" name="min-price" type="number" value="0" min="0">
                   </div>
-                  <div class="filter-range-item">
+                  <div class="filter-range-item filter-range-item-max">
                     <label for="max">до</label>
-                    <input class="filter-range-input filter-range-input-max" id="max" name="max-price" type="number"
-                      value="9000" min="0">
+                    <input class="filter-range-input" id="max" name="max-price" type="number" value="9000" min="0">
                   </div>
                 </div>
                 <div class="filter-toggle">
@@ -247,8 +245,8 @@
           <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="email">Ваш email</label>
-            <input class="subscribe-input form-input" id="email" name="email" type="email" inputmode="email"
-              autocomplete="email" placeholder="Ваш e-mail" required>
+            <input class="subscribe-input" id="email" name="email" type="email" inputmode="email" autocomplete="email"
+              placeholder="Ваш e-mail" required>
             <button class="button-secondary subscribe-button" type="submit">Подписаться</button>
           </form>
         </section>
