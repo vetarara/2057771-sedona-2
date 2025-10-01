@@ -14,6 +14,11 @@
   text-decoration: none;
 }
 
-a.academy-logo {
+.academy-logo {
   display: inline-block;
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/logo/logo-html-academy.svg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
 }

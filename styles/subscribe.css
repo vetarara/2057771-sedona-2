@@ -6,7 +6,7 @@
 .subscribe-img {
   color: #ffffff;
   background-color: #82b3d3;
-  background-image: url("../images/subscribe-blur.jpg");
+  background-image: url("../images/background/subscribe-blur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
