@@ -126,7 +126,7 @@ body {
   color: #ffffff;
   text-align: center;
   background-color: #47638b;
-  background-image: url("../images/background/divider.svg"), url("../images/background/mountains-background.jpg");
+  background-image: url("../images/backgrounds/divider.svg"), url("../images/backgrounds/mountains-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
   background-position: left bottom, left top;
@@ -243,7 +243,7 @@ body {
 .subscribe-img {
   color: #ffffff;
   background-color: #47638b;
-  background-image: url("../images/background/subscribe-blur.jpg");
+  background-image: url("../images/backgrounds/subscribe-blur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -283,7 +283,7 @@ body {
 .filter {
   color: #ffffff;
   background-color: #47638b;
-  background-image: url("../images/background/filter-background.jpg");
+  background-image: url("../images/backgrounds/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -381,23 +381,23 @@ body {
 }
 
 /* hotels */
-.hotels-title a {
+.hotel-title a {
   font-size: 24px;
   line-height: 28px;
   color: #000000;
   text-decoration: none;
 }
 
-.hotels-more {
+.hotel-more {
   font-size: 16px;
   line-height: 20px;
 }
 
-.hotels-item .button {
+.hotel-item .button {
   min-width: 140px;
 }
 
-.hotels-rating {
+.hotel-rating {
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
