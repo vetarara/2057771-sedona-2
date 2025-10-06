@@ -15,8 +15,14 @@
   font-display: swap;
 }
 
+html {
+  height: 100%;
+}
+
 body {
-  margin: 0 40px;
+  margin: 0;
+  display: flex;
+  min-height: 100%;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -27,6 +33,10 @@ body {
 }
 
 .page-container {
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -121,11 +131,16 @@ body {
   background-repeat: no-repeat;
 }
 
+/* main */
+.main-container {
+  flex-grow: 1;
+}
+
 /* hero */
 .hero {
   color: #ffffff;
   text-align: center;
-  background-color: #47638b;
+  background-color: #8f959d;
   background-image: url("../images/backgrounds/divider.svg"), url("../images/backgrounds/mountains-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
@@ -167,11 +182,11 @@ body {
 }
 
 .advantage-item.advantage-item-accent {
-  color: #ffffff;
   background-color: #82b3d3;
 }
 
-.advantage-item-accent .advantage-title {
+.advantage-item-accent .advantage-title,
+.advantage-item-accent .advantage-description {
   color: #ffffff;
 }
 
@@ -242,7 +257,7 @@ body {
 
 .subscribe-img {
   color: #ffffff;
-  background-color: #47638b;
+  background-color: #8f959d;
   background-image: url("../images/backgrounds/subscribe-blur.jpg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -282,7 +297,7 @@ body {
 /* filter */
 .filter {
   color: #ffffff;
-  background-color: #47638b;
+  background-color: #8f959d;
   background-image: url("../images/backgrounds/filter-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
