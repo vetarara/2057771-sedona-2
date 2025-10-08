@@ -89,6 +89,7 @@ body {
 .header .wrapper {
   display: flex;
   font-size: 20px;
+  flex-wrap: wrap;
 }
 
 .header-navigation {
@@ -222,6 +223,7 @@ body {
 .advantage-item-accent {
   grid-column: 1 / 4;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .advantage-item-accent .image-first {
@@ -370,6 +372,7 @@ body {
 
 .filter-form {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -436,6 +439,7 @@ body {
 
 .search-result-sorting {
   display: flex;
+  flex-wrap: wrap;
   gap: 70px;
 }
 
@@ -461,6 +465,7 @@ body {
 
 .view {
   display: flex;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
@@ -516,6 +521,7 @@ body {
 .pagination {
   display: flex;
   justify-content: flex-start;
+  flex-wrap: wrap;
   gap: 8px;
 }
 
