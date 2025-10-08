@@ -73,27 +73,40 @@
 
             <h2 class="visually-hidden">Выбор гостиницы</h2>
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
+
               <fieldset class="filter-group-check">
                 <legend class="filter-title">Инфраструктура:</legend>
                 <div class="filter-list">
-                  <input class="filter-input" id="pool" name="pool" type="checkbox" checked>
-                  <label class="filter-control" for="pool">Бассейн</label>
-                  <input class="filter-input" id="parking" name="parking" type="checkbox" checked>
-                  <label class="filter-control" for="parking">Парковка</label>
-                  <input class="filter-input" id="wi-fi" name="wi-fi" type="checkbox">
-                  <label class="filter-control" for="wi-fi">Wi-Fi</label>
+                  <label class="filter-control" for="pool">
+                    <input class="filter-input" id="pool" name="pool" type="checkbox" checked>
+                    Бассейн
+                  </label>
+                  <label class="filter-control" for="parking">
+                    <input class="filter-input" id="parking" name="parking" type="checkbox" checked>
+                    Парковка
+                  </label>
+                  <label class="filter-control" for="wi-fi">
+                    <input class="filter-input" id="wi-fi" name="wi-fi" type="checkbox">
+                    Wi-Fi
+                  </label>
                 </div>
               </fieldset>
 
               <fieldset class="filter-group-radio">
                 <legend class="filter-title">Тип Жилья:</legend>
                 <div class="filter-list">
-                  <input class="filter-input" id="hotel" name="housing-type" type="radio" value="hotel" checked>
-                  <label class="filter-control" for="hotel">Гостиница</label>
-                  <input class="filter-input" id="motel" name="housing-type" type="radio" value="motel">
-                  <label class="filter-control" for="motel">Мотель</label>
-                  <input class="filter-input" id="apartments" name="housing-type" type="radio" value="apartments">
-                  <label class="filter-control" for="apartments">Апартаменты</label>
+                  <label class="filter-control" for="hotel">
+                    <input class="filter-input" id="hotel" name="housing-type" type="radio" value="hotel" checked>
+                    Гостиница
+                  </label>
+                  <label class="filter-control" for="motel">
+                    <input class="filter-input" id="motel" name="housing-type" type="radio" value="motel">
+                    Мотель
+                  </label>
+                  <label class="filter-control" for="apartments">
+                    <input class="filter-input" id="apartments" name="housing-type" type="radio" value="apartments">
+                    Апартаменты
+                  </label>
                 </div>
               </fieldset>
 
@@ -102,14 +115,14 @@
 
                 <div class="filter-range-container">
                   <div class="filter-range-change">
-                    <div class="filter-range-item filter-range-item-min">
-                      <label for="min">от</label>
+                    <label class="filter-range-item filter-range-item-min" for="min">
                       <input class="filter-range-input" id="min" name="min-price" type="number" value="0" min="0">
-                    </div>
-                    <div class="filter-range-item filter-range-item-max">
-                      <label for="max">до</label>
+                      от
+                    </label>
+                    <label class="filter-range-item filter-range-item-max" for="max">
                       <input class="filter-range-input" id="max" name="max-price" type="number" value="9000" min="0">
-                    </div>
+                      до
+                    </label>
                   </div>
                   <div class="filter-toggle">
                     <button class="filter-toggle-item filter-toggle-item-min" type="button"
@@ -124,7 +137,10 @@
                 <button class="button button-secondary" type="submit">Применить</button>
                 <button class="button button-reset" type="reset">Сбросить</button>
               </div>
+
             </form>
+
+
           </div>
         </section>
 

@@ -95,6 +95,7 @@ body {
   flex-grow: 1;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .navigation-list {
@@ -130,6 +131,7 @@ body {
 .footer .wrapper {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .social-media address,
@@ -170,17 +172,12 @@ body {
   background-image: url("../images/backgrounds/divider.svg"), url("../images/backgrounds/mountains-background.jpg");
   background-size: 100% auto, cover;
   background-repeat: no-repeat;
-  background-position: left bottom, left top;
+  background-position: left bottom -1px, left top;
 }
 
 /* advantages */
 .advantages {
   text-align: center;
-}
-
-.advantages-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
 }
 
 .advantages-title {
@@ -196,7 +193,13 @@ body {
   line-height: 26px;
 }
 
+.advantages-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .advantage-item {
+  flex-grow: 1;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -239,11 +242,6 @@ body {
   text-align: center;
 }
 
-.features-list {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
 .features-title {
   font-size: 30px;
   line-height: 36px;
@@ -255,6 +253,11 @@ body {
 .features-subtitle {
   font-size: 22px;
   line-height: 26px;
+}
+
+.features-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .feature-item {
@@ -392,21 +395,20 @@ body {
   line-height: 23px;
 }
 
-.filter-range-item {
-  width: fit-content;
+/* .filter-range-change {
   background-color: #ffffff;
-}
+  если поставить от и до position relative/absolute то это и не понадобится
+} */
 
-.filter-range-item-min {
+.filter-range-item-min .filter-range-input {
   border-radius: 4px 0 0 4px;
 }
 
-.filter-range-item-max,
 .filter-range-item-max .filter-range-input {
   border-radius: 0 4px 4px 0;
 }
 
-.filter-range-item label {
+.filter-range-item {
   color: rgba(0, 0, 0, 0.5);
 }
 
