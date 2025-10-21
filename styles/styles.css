@@ -107,8 +107,11 @@ body {
   z-index: 2;
 }
 
+.navigation-logo img {
+  display: block;
+}
+
 .header-navigation {
-  flex-grow: 1;
   display: grid;
   grid-template-columns: 70% 30%;
 }
@@ -126,7 +129,6 @@ body {
 .navigation-link,
 .navigation-user-link {
   display: inline-block;
-  padding: 20px 0;
   line-height: 26px;
   font-weight: 700;
   color: #000000;
@@ -134,11 +136,19 @@ body {
 }
 
 .navigation-link {
-  margin: 0 16px;
+  padding: 20px 16px;
+  position: relative;
 }
 
-.navigation-link-current {
-  border-bottom: 2px solid #756257;
+.navigation-link-current::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: calc(100% - 32px);
+  height: 2px;
+  background-color: #756257;
+  bottom: 0;
+  left: 16px;
 }
 
 .navigation-user-link {
