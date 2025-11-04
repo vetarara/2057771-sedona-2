@@ -213,7 +213,8 @@ body {
 }
 
 .social-media-list {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .social-media-link {
@@ -313,6 +314,9 @@ body {
 
 .advantage-item img {
   display: block;
+  max-width: 800px;
+  height: auto;
+  object-fit: contain;
 }
 
 .advantage-item-accent {
@@ -327,6 +331,8 @@ body {
 .advantage-item-wrapper {
   padding: 102px 85px;
   max-width: 400px;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 
 .advantage-item:not(:has(.advantage-item-wrapper)) {
