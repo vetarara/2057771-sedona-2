@@ -113,7 +113,8 @@ body {
 
 .header-navigation {
   display: grid;
-  grid-template-columns: 70% 30%;
+  grid-template-columns: 68% 29%;
+  gap: 3%;
 }
 
 .navigation-list {
@@ -290,7 +291,6 @@ body {
 }
 
 .advantage-item {
-  flex-grow: 1;
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -513,7 +513,7 @@ body {
 /* CATALOG-PAGE */
 /* filter */
 .filter {
-  padding: 35px 70px;
+  padding: 35px 70px 70px;
   color: #ffffff;
   background-color: #8f959d;
   background-image: url("../images/backgrounds/filter-background.jpg");
@@ -523,9 +523,14 @@ body {
 
 .page-title {
   margin: 0;
+  margin-bottom: 8px;
   font-size: 60px;
   line-height: 78px;
   font-weight: 700;
+}
+
+.breadcrumbs {
+  margin-bottom: 40px;
 }
 
 .breadcrumbs-link {
@@ -541,58 +546,70 @@ body {
   gap: 70px;
 }
 
-.filter-group-range {
-  margin-left: auto;
+.filter-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
-.filter-form fieldset {
-  border: none;
+.filter-form .filter-group-radio {
+  margin-right: auto;
+}
+
+.filter-title {
+  margin-bottom: 32px;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
 }
 
 .filter-list {
   display: grid;
 }
 
-.filter-title {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
+.filter-range-change {
+  display: flex;
+  gap: 2px;
 }
 
 .filter-control {
   line-height: 23px;
 }
 
-/* .filter-range-change {
-  background-color: #ffffff;
-  если поставить от и до position relative/absolute то это и не понадобится
-} */
-
-.filter-range-item-min .filter-range-input {
-  border-radius: 4px 0 0 4px;
-}
-
-.filter-range-item-max .filter-range-input {
-  border-radius: 0 4px 4px 0;
-}
-
 .filter-range-item {
+  display: flex;
+  align-items: center;
+  max-width: 143px;
+  padding: 12px 20px;
+  box-sizing: border-box;
   color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
 }
 
 .filter-range-input {
-  padding: 12px 20px;
+  width: 100%;
+  box-sizing: border-box;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
   color: #000000;
-  background-color: #ffffff;
   border: none;
 }
 
+.filter-range-item:first-of-type,
+.filter-range-item:first-of-type .filter-range-input {
+  border-radius: 4px 0 0 4px;
+}
+
+.filter-range-item:last-of-type {
+  border-radius: 0 4px 4px 0;
+}
+
 .filter-buttons {
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   gap: 32px;
 }
 
@@ -602,7 +619,7 @@ body {
 
 /* search-result */
 .search-result {
-  padding: 0 70px;
+  padding: 50px 70px 0;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -610,11 +627,13 @@ body {
 
 .search-result-sorting {
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
   gap: 70px;
 }
 
 .search-result-title {
+  margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -624,6 +643,7 @@ body {
 
 .sorting {
   margin-left: auto;
+  min-width: 292px;
   padding: 14px 20px;
   font-family: inherit;
   font-size: 18px;
@@ -660,9 +680,39 @@ body {
 }
 
 .hotels-list {
+  padding-bottom: 40px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hotel-item {
+  max-width: 340px;
+  box-sizing: border-box;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: min-content 1fr;
+  gap: 16px 20px;
+  border-radius: 4px;
+  outline: 1px solid #e5e5e5;
+}
+
+.hotel-item * {
+  margin: 0;
+}
+
+.hotel-img {
+  grid-column: 1 / -1;
+}
+
+.hotel-img img {
+  display: block;
+}
+
+.hotel-title {
+  grid-column: 1 / 3;
 }
 
 .hotel-title a {
@@ -672,6 +722,10 @@ body {
   text-decoration: none;
 }
 
+.hotel-price {
+  justify-self: end;
+}
+
 .hotel-more {
   font-size: 16px;
   line-height: 20px;
@@ -679,13 +733,17 @@ body {
 
 .hotel-item .button {
   min-width: 140px;
+  box-sizing: border-box;
 }
 
 .hotel-rating {
+  padding: 8px;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   background-color: #f2f2f2;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 /* pagination */
@@ -700,8 +758,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  box-sizing: border-box;
+  min-width: 60px;
+  padding: 12px;
   color: #ffffff;
   background-color: #82b3d3;
   border-radius: 4px;
