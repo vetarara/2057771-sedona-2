@@ -87,6 +87,14 @@ body {
   background-color: transparent;
 }
 
+.button-reset:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.button-reset:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button-remove {
   background-color: #7db54f;
 }
@@ -959,8 +967,8 @@ body {
   opacity: 0.3;
 }
 
-.filter-control:disabled,
-.filter-control[disabled] {
+.filter-input:disabled,
+.filter-input[disabled] {
   opacity: 0.6;
   cursor: not-allowed;
   pointer-events: none;
@@ -992,8 +1000,16 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
-  appearance: textfield;
+  /* appearance: textfield; */
 }
+
+.filter-range-input::-webkit-outer-spin-button,
+.filter-range-input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
 
 .filter-range-item:first-of-type,
 .filter-range-item:first-of-type .filter-range-input {
@@ -1032,6 +1048,26 @@ body {
   border-radius: 5px;
   border: none;
   cursor: pointer;
+  z-index: 2;
+}
+
+.filter-toggle-item:hover,
+.filter-toggle-item:focus-visible {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.filter-toggle-item:active {
+  box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83b3d3;
+}
+
+.filter-toggle:has(.filter-toggle-item:disabled) {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.filter-toggle-item:disabled {
+  cursor: not-allowed;
 }
 
 .filter-toggle-item-min {
@@ -1081,7 +1117,7 @@ body {
 
 .sorting {
   width: 292px;
-  padding: 14px 20px;
+  padding: 14px 40px 14px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 21px;
@@ -1090,13 +1126,15 @@ body {
   background-image: url("../images/icons/select-arrow.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
-  border: 2px solid #e5e5e5;
+  border: none;
+  outline: 2px solid #e5e5e5;
+  outline-offset: -2px;
   border-radius: 4px;
   appearance: none;
 }
 
 .sorting:hover {
-  border-color: #68a2ca;
+  outline-color: #68a2ca;
 }
 
 .view {
@@ -1107,9 +1145,9 @@ body {
 }
 
 .view-item {
-  display: inline-block;
+  display: block;
   width: 44px;
-  height: 44px;
+  height: 45px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   background-repeat: no-repeat;
@@ -1265,7 +1303,7 @@ body {
   gap: 8px;
 }
 
-.pagination .pagination-link {
+.pagination-link {
   display: flex;
   justify-content: center;
   align-items: center;
