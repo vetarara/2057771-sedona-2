@@ -245,13 +245,15 @@
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
               <label class="modal-search-label" for="checkin">
                 Дата Заезда:
-                <input class="modal-search-input" id="checkin" name="checkin" type="date" required>
+                <input class="modal-search-input" id="checkin" name="checkin" type="text" placeholder="Укажите дату"
+                  value="27 апреля 2020" required>
                 <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
               </label>
 
               <label class="modal-search-label" for="departure">
                 Дата Выезда:
-                <input class="modal-search-input" id="departure" name="departure" type="date" required>
+                <input class="modal-search-input" id="departure" name="departure" type="text" placeholder="Укажите дату"
+                  value="1 сентября 2023" required>
                 <span class="message message-valid">На эти даты есть свободные номера. Пока есть.</span>
               </label>
 
