@@ -1633,12 +1633,12 @@ body {
   margin: 0;
 }
 
-.hotel-img {
+.hotel-pics {
   grid-column: 1 / -1;
   overflow: hidden;
 }
 
-.hotel-img img {
+.hotel-img {
   display: block;
   width: 100%;
   height: auto;
@@ -1649,7 +1649,7 @@ body {
   transition: transform 0.4s ease, -webkit-transform 0.4s ease;
 }
 
-.hotel-item:hover .hotel-img img {
+.hotel-item:hover .hotel-img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   transform: scale(1.1);
