@@ -243,49 +243,58 @@
           <section class="modal-content">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="modal-search-label" for="checkin">
-                Дата Заезда:
+              <label class="modal-search-label" for="checkin">Дата Заезда:</label>
+              <div class="commented-input">
                 <input class="modal-search-input" id="checkin" name="checkin" type="text" placeholder="Укажите дату"
                   value="27 апреля 2020" required>
                 <span class="message message-error">Мы не можем отправить вас в прошлое.</span>
-              </label>
+              </div>
 
-              <label class="modal-search-label" for="departure">
-                Дата Выезда:
+              <label class="modal-search-label" for="departure">Дата Выезда:</label>
+              <div class="commented-input">
                 <input class="modal-search-input" id="departure" name="departure" type="text" placeholder="Укажите дату"
                   value="1 сентября 2023" required>
                 <span class="message message-valid">На эти даты есть свободные номера. Пока есть.</span>
-              </label>
-
-              <div class="adults-count">
-                <label class="modal-search-adults" for="adults">Взрослые:</label>
-                <div class="count-controls">
-                  <button class="decrease" type="button">
-                    <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
-                  </button>
-                  <input class="modal-search-count-input" type="number" id="adults" name="adults-count" placeholder="1"
-                    min="1" value="2" required>
-                  <button class="increase" type="button">
-                    <span class="visually-hidden">Увеличить количество взрослых на 1</span>
-                  </button>
-                </div>
               </div>
 
-              <div class="children-count">
-                <label class="modal-search-adults" for="children">Дети:</label>
-                <div class="count-controls">
-                  <button class="decrease" type="button">
-                    <span class="visually-hidden">Уменьшить количество детей на 1</span>
-                  </button>
-                  <input class="modal-search-count-input" type="number" id="children" name="children-count"
-                    placeholder="1" min="1" value="2" required>
-                  <button class="increase" type="button">
-                    <span class="visually-hidden">Увеличить количество детей на 1</span>
-                  </button>
-                </div>
+              <label class="modal-search-adults" for="adults">Взрослые:</label>
+              <div class="count-controls">
+                <button class="decrease" type="button">
+                  <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                  <span class="visually-hidden">Уменьшить количество взрослых на 1</span>
+                </button>
+                <input class="modal-search-count-input" type="number" id="adults" name="adults-count" placeholder="1"
+                  min="1" value="2" required>
+                <button class="increase" type="button">
+                  <span class="visually-hidden">Увеличить количество взрослых на 1</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
+              </div>
+
+              <label class="modal-search-children" for="children">Дети:</label>
+              <div class="count-controls">
+                <button class="decrease" type="button">
+                  <span class="visually-hidden">Уменьшить количество детей на 1</span>
+                  <svg width="14" height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M0 0L0 2L14 2V0L0 0Z" />
+                  </svg>
+                </button>
+                <input class="modal-search-count-input" type="number" id="children" name="children-count"
+                  placeholder="1" min="0" value="2" required>
+                <button class="increase" type="button">
+                  <span class="visually-hidden">Увеличить количество детей на 1</span>
+                  <svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17 9H11V3H9V9H3V11H9V17H11V11H17V9Z" />
+                  </svg>
+                </button>
               </div>
               <button class="modal-search-button button button-secondary " type="submit">Найти</button>
             </form>
+
           </section>
         </div>
       </div>
