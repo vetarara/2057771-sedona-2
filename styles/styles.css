@@ -729,15 +729,13 @@ body {
   background-color: #f2f2f2;
   border-radius: 4px;
   z-index: 1;
-  -webkit-appearance: textfield;
+  -webkit-appearance: none;
   -moz-appearance: textfield;
-  appearance: textfield;
 }
 
 .modal-search-count-input::-webkit-outer-spin-button,
 .modal-search-count-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  appearance: none;
   margin: 0;
 }
 
@@ -774,10 +772,7 @@ body {
   position: absolute;
   display: none;
   top: 52px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  left: -50%;
   width: 256px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1370,12 +1365,12 @@ body {
   color: #000000;
   background-color: #f2f2f2;
   border: none;
+  -moz-appearance: textfield;
 }
 
 .filter-range-input::-webkit-outer-spin-button,
 .filter-range-input::-webkit-inner-spin-button {
   -webkit-appearance: none;
-  appearance: none;
   margin: 0;
 }
 
