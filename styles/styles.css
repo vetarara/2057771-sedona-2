@@ -191,9 +191,9 @@ body {
 .header-navigation {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 68% 3% 29%;
-  grid-template-columns: 68% 29%;
-  gap: 3%;
+  -ms-grid-columns: 68% 2% 30%;
+  grid-template-columns: 68% 30%;
+  gap: 2%;
 }
 
 .navigation-list {
@@ -221,7 +221,7 @@ body {
 }
 
 .navigation-link {
-  padding: 20px 16px;
+  padding: 19px 16px;
   position: relative;
 }
 
@@ -306,6 +306,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 }
@@ -836,7 +837,7 @@ body {
 }
 
 .hero-description {
-  padding: 50px 50px 82px;
+  padding: 51px 50px 82px;
 }
 
 /* advantages */
@@ -855,7 +856,7 @@ body {
 }
 
 .advantages-subtitle {
-  margin: 0 auto 70px;
+  margin: 0 auto 90px;
   max-width: 651px;
   font-size: 22px;
   line-height: 26px;
@@ -1070,7 +1071,7 @@ body {
 
 /* subscribe */
 .subscribe {
-  padding: 96px 258px;
+  padding: 96px 258px 104px;
   text-align: center;
   color: #000000;
 }
