@@ -269,9 +269,15 @@ body {
   fill: #000000;
 }
 
-.navigation-user-icon:hover,
-.navigation-user-icon:focus-visible {
+.navigation-user-link:hover .navigation-user-icon,
+.navigation-user-link:focus-visible .navigation-user-icon {
   fill: #756157;
+}
+
+
+.navigation-user-link:active .navigation-user-icon,
+.navigation-user-link:focus-visible .navigation-user-icon {
+  opacity: 0.3;
 }
 
 .favorites-count {
